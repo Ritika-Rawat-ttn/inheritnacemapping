@@ -1,13 +1,15 @@
 package com.example.inheritancemapping.entities;
 
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "bankcheck")
-@PrimaryKeyJoinColumn(name = "id")
+@PrimaryKeyJoinColumn(name="id")
 public class Check extends Payment{
     private String checknumber;
 

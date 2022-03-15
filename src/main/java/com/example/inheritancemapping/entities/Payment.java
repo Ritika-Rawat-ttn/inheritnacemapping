@@ -4,6 +4,7 @@ package com.example.inheritancemapping.entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "payment")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Payment {
     @Id
